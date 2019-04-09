@@ -2,7 +2,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>宽频振荡监测主站系统(WAMS 2.0)</title>
+		<title>数字物理混合仿真技术</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta http-equiv="Expires" content="0">
@@ -210,128 +210,86 @@
 		<div class="mui-content">
 			<div class="mui-content-padded">
 				<p style="width:100%;text-align:center">
-					<h5 style="font-size:15px;width:100%;text-align: center;">宽频振荡监测主站系统(WAMS 2.0)</h5>
+					<h5 style="font-size:15px;width:100%;text-align: center;">数字物理混合仿真技术</h5>
 				</p>
-				<p style="width:100%;text-align:right">2019年3月19日</p>
+				<p style="width:100%;text-align:right">2019-03-15 仿真事业部</p>
 				<p>
 					<h5>概述</h5>
 				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电力系统实时动态监测系统（WAMS）适用于广域电网、区域电网运行机构对电网运行动态过程的监视与分析。经过近20年的发展，中国已经建成世界规模最大的WAMS系统，已有接近5000个厂站安装了PMU装置，在支撑广域电网安全稳定运行方面发挥了巨大作用。</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为适应风电场与光伏电站大规模并网、电能大范围输送、可再生能源占比越来越高的中国电网发展趋势，支撑电网调控中心应对特高压交直流混联电网的复杂特性，四方公司总结近20年的产品开发、技术研究与产品运维的经验，推出电网宽频振荡监测系统（WAMS
-					2.0）。
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					系统采用了数字化的一次模型软件与真实的二次设备相结合的数字与物理混合真技术，构成了功能更加全面的综合自动化变电站仿真培训系统。综自监控系统、控制、测量、保护及自动装置等采用现场真实的物理设备，而邻近电网、一次设备、其余二次部分设备采用数字模拟仿真，采用电磁暂态技术实现数字电网仿真的真实性、实时性、一致性和可靠性，在正常操作和一次设备发生故障的情况下，仿真时间与物理时间完全一致，提供的电气量波形与现场故障录波器采集的波形一致。可实现对变电站运行及二次回路的操作培训，故障的分析、判断、查找及处理，提高运行及继电保护人员的技能水平。
 				</p>
 
+
 				<p>
-					<h5>系统架构</h5>
+					<h5>网络结构</h5>
 				</p>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					电力系统宽频振荡监测系统由位于发电厂、变电站、新能源厂站的新型同步相量测量装置和位于多级调控中心的监测系统主站构成。
+				本系统采用开放式体系结构，基于国际公认标准的网络环境及分布式客户/服务器体系，系统配置灵活方便，系统软、硬件结构图如下：
 				</p>
 				<p>
-					<img src="./images/6-5/image002.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
+					<img src="./images/6-6/image001.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
 				</p>
-				<p style="width:100%;text-align:center">图1电力系统宽频振荡监测系统架构图</p>
 				<br>
 				<p>
-					<h5>主要功能</h5>
+					<h5>系统组成</h5>
 				</p>
-				<p>
-					<h5>1)振荡模式在线提取</h5>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					系统主要包括：通用仿真支撑系统(Cybersim)、电网动态分析程序(LAP)、户外一次设备仿真软件、室内控制及保护室设备、教员台及培训管理软件、变电站监控系统软件、以及从实时数据库中数据读取及处理接口程序等。
 				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计算功率波动最强机组、线路的主导振荡模式，提取相邻区域厂站注入功率的振荡模式，按照相位进行在线分群，结合电网拓扑关系辅助确定扰动源。</p>
-				<p>
-					<img src="./images/6-5/image003.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">（2-1）节点振荡模态筛选</p>
-				<p>
-					<img src="./images/6-5/image005.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">（2-2）基于振荡模态在线分群</p>
-
-				<p>
-					<img src="./images/6-5/image007.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">（2-3）辅助振荡源定位</p>
 
 
 				<p>
-					<h5>2)基于暂态能量法的强迫振荡源定位</h5>
+					<h5>系统特点</h5>
 				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据主导振荡模式频率，提取机组出力、厂站注入功率、线路功率的主导振荡曲线，进行暂态能量积分，通过对节点注入暂态能量的积分曲线，结合网络拓扑关系，确定振荡源。</p>
-				<p style="width:100%;text-align:center">
-					<img src="./images/6-5/image009.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">（3-1）振荡能量流出 </p>
-
-
-				<p style="width:100%;text-align:center">
-					<img src="./images/6-5/image011.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">（3-2）振荡能量流入</p>
-
-
-				<p style="width:100%;text-align:center">
-					<img src="./images/6-5/image013.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">（3-3）振荡能量积分曲线</p>
-
-
-				<p style="width:100%;text-align:center">
-					<img src="./images/6-5/image015.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">（3-4）振荡源定位</p>
-
-
-
-				<p>
-					<h5>3)宽频振荡在线监测</h5>
-				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对振荡最直观的展示效果是对输电线路进行振荡功率的渲染，在对监视频段内可能出现的超低频振荡、低频振荡（区间）、低频振荡（局部）、中高频振荡和次超同步振荡事件，通过振荡类型按钮进行目标振荡模态的切换，在地理接线图上进行振荡功率传输路径的渲染。</p>
-
-				<p>
-					<img src="./images/6-5/image017.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">（4-1）超低频振荡模态</p>
-				<p>
-					<img src="./images/6-5/image019.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">（4-2）区间低频振荡模态</p>
-
-
-				<p>
-					<h5>4)时序相关的多维展示</h5>
-				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					基于时间驱动与拓扑关系的一体化监视与振荡可视化工具以地理接线图、关键数据曲线、实时告警窗为主要元素，结合应用分析结果组合：断面潮流、全网相角差、实时振荡模态、振荡源定位、电压稳定裕度指标等，构成可视化主题画面。其中曲线（以频率为主）用于表现被观测电网的关键厂站在时域的变化趋势，地理接线图上则通过等高线渲染、箭头、着色线段等方式，表现被观测电网在当前时刻运行态势在空间的分布情况。
-				</p>
-				<p style="width:100%;text-align:center">
-					<img src="./images/6-5/image021.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">图5 基于时间驱动的一体化监视与振荡可视化工具</p>
-
-				<p style="width:100%;text-align:center">
-					<img src="./images/6-5/image023.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">图6 故障潮流转移监视模式</p>
-
-
-				<p>
-					<h5>系统特点与优势</h5>
-				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					与WAMS系统现状相比，具有如下关键特征与优势。
-				</p>
-				<p>
-					<img src="./images/6-5/image025.png" style="max-width:100%;width:100%" data-preview-src="" data-preview-group="1" />
-				</p>
-				<p style="width:100%;text-align:center">图7 关键技术特征与优势</p>
-				
 				<ul style="font-size:14px">
-					<li>采用弹性架构，支持调控中心独立部署，支持分层分级调控中心协同部署；</li>
-					<li>采用复合振荡源定位算法，低频振荡监视与强迫振荡源定位结果更准确可靠；</li>
-					<li>支持安全Ⅰ区、Ⅲ区镜像部署，具备良好的应用扩展机制；</li>
-					<li>时序相关的多维信息展示机制，提供更直观、更便捷、更丰富的可视化效果，有效进行电网运行宽频振荡模式的追踪与监测。</li>
+					<li>
+			具有电磁暂态实时仿真计算软件
+					</li>
+					<li>
+					提供实时高精度的电流电压信号源
+					</li>					
+					<li>
+			系统能实现与真实综自后台监控系统连接
+					</li>					
+					<li>
+			提供二次回路故障模拟系统
+					</li>
+										<li>
+					提供真实的继电保护测试平台
+							</li>
 				</ul>
+				
+				<p>
+					<h5>工程应用</h5>
+				</p>
+				<p>
+					<img src="./images/6-6/image003.jpg" style="max-width:100%" data-preview-src="" data-preview-group="1" />
+				</p>
+				<p>
+					<img src="./images/6-6/image005.jpg" style="max-width:100%" data-preview-src="" data-preview-group="1" />
+				</p>
+				<p>
+					<img src="./images/6-6/image007.png" style="max-width:100%" data-preview-src="" data-preview-group="1" />
+				</p>
+				<p>
+					<img src="./images/6-6/image009.jpg" style="max-width:100%" data-preview-src="" data-preview-group="1" />
+				</p>
+
+				<br>
+				<h4 style="text-align:center;color:royalblue">
+					★创新铸就四方，梦想点亮未来★<br><br>
+					★Innovation Lights Our Future★
+				</h4>
+				<br>
+				<p style="text-align:center;font-weight:bold">
+					四方股份为您提供优质的解决方案
+				</p>
+				<p style="text-align:center;font-weight:bold">
+					如有任何问题，请与我们联系<br>
+					邮箱：guodongxia@sf-auto.com<br>电话：18515513881/010-82181832
+				</p>
+				
 			</div>
 		</div>
 	</body>
