@@ -14,15 +14,16 @@
 		<link rel="stylesheet" href="./css/mui.min.css">
 		<!--App自定义的css-->
 		<style type="text/css">
-			p{
-				color:black;
+			p {
+				color: black;
 			}
-			h5{
-				font-size:14px;	
+
+			h5 {
+				font-size: 14px;
 				font-weight: bold;
-				color:black;
+				color: black;
 			}
-			
+
 			.mui-preview-image.mui-fullscreen {
 				position: fixed;
 				z-index: 20;
@@ -198,7 +199,7 @@
 			}
 
 			p img {
-				max-width: 100%!important;
+				max-width: 100% !important;
 				height: auto;
 			}
 		</style>
@@ -208,62 +209,77 @@
 	<body>
 		<div class="mui-content">
 			<div class="mui-content-padded">
-				<p><h5 style="font-size:15px">基于人工智能的风电场视频巡检系统</h5></p>
-				<p><h5>概述</h5></p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于人工智能的风电场视频巡检系统采用升压站、风机摄像头采集视频图像，通过人工智能识别、视频轮巡、多视频拼接的方式进行视频就地分析，减轻集控视频处理压力，分析结果远距离传输到上一级集控中心供设备运维人员决策使用。同时区域检修中心通过WEB浏览的方式对场内视频巡检系统进行访问操作。<br>
-                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风电场视频巡检系统可以代替人工巡检传统作业模式，实现风电场巡检的规范化和智能化，保证设备长期高效稳定运行。
-				</p>
-				
-				<p><h5>系统架构</h5></p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;风电场视频巡检系统子系统综合利用了视频、人工智能、图像识别等先进技术，系统将风机和升压站的视频集中整合，设备主要包含风电场、升压站安装的摄像头、网络存储、连接、安防设备等。风电场视频巡检系统结构如图所示：
+				<p>
+					<h5 style="font-size:15px;text-align:center">基于人工智能的风电场视频巡检系统</h5>
 				</p>
 				<p>
-				 <img src="./images/new2-2/image001.png" style="max-width:100%" data-preview-src="" data-preview-group="1" />	
+					<h5>概述</h5>
+				</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					基于人工智能的风电场视频巡检系统在升压站、风机部署摄像头采集视频图像，通过人工智能识别、视频轮巡、多视频拼接的方式进行视频就地分析，减轻集控视频处理压力，分析结果远距离传输到上一级集控中心供设备运维人员决策使用。同时区域检修中心通过Web浏览的方式对场内视频巡检系统进行访问操作。
+				</p>
+				<p>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					风电场视频巡检系统可以代替传统人工巡检模式，实现风电场巡检的规范化和智能化，保证设备长期高效稳定运行。
+				</p>
+
+				<p>
+					<h5>系统架构</h5>
+				</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					风电场视频巡检系统系统综合利用了人工智能图像识别、红外热成像、多视频轮训等技术，将风机和升压站的视频集中整合，设备主要包含风电场及升压站前端巡检摄像机、硬盘录像机、图像处理服务器、Web服务器等。
+				</p>
+				<p>
+					<img src="./images/new2-2/image001.png" style="max-width:100%" data-preview-src="" data-preview-group="1" />
 				</p>
 				<p style="text-align:center;width:100%">风电场视频巡检系统结构图</p>
-			
-				<p><h5>主要功能</h5></p>
-			    <p>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.实时在线图像识别：系统可以对设备及运行环境进行实时监控，并对升压站变压器漏油、引下线跌落、异物缠绕、油位异常、故障指示灯等设备异常进行主动识别，推送异常图片给运维人员，做到无人值守的升压站设备异常早发现、早知道。<br>			
+
+				<p>
+					<h5>主要功能</h5>
 				</p>
 				<p>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.红外热成像测温预警：对变压器、母线、互感器等设备主导流部位、引线夹进行的红外热成像实时监测，并与同组其他相别的监测数据进行对比分析，对异常状态及时预告警，生成分析报告推送至设备运维人员<br>			
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					1.实时在线图像识别：系统可以对变压器漏油、引下线跌落、异物缠绕、油位异常、故障指示灯等异常进行主动识别，推送异常图片给运维人员，做到无人值守的升压站设备异常早发现、早知道。
 				</p>
 				<p>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.智能设备巡检：按照人工巡检路线可定时将顺序联动的摄像头的视频重新组合，形成整体设备视频录像，可模拟人工定时巡检、特殊巡检等巡检方式，巡检结果以报表及录像的方式呈现给用户。<br>			
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					2.红外热成像测温预警：对变压器、母线、互感器等设备的主导流部位、引线夹进行的红外热成像实时温度监测，并与同组其他相别的监测数据进行对比分析，对异常状态及时预告警，生成分析报告推送至设备运维人员。
 				</p>
 				<p>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.智能安防巡检：可定时对升压站、风机设备运行环境进行巡检，系统可以实时监测非法入侵自动报警。对移动对象自动跟踪、抓拍、可自动报警。<br>			
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					3.智能设备巡检：按照人工巡检路线将顺序联动的摄像头视频重新组合，形成整体设备巡检视频，可模拟人工定时巡检、特殊巡检等巡检方式，巡检结果以报表及录像的方式呈现给用户。
 				</p>
 				<p>
-				 <img src="./images/new2-2/image003.png" style="max-width:100%" data-preview-src="" data-preview-group="1" />	
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					4.智能安防巡检：对升压站、风机设备运行环境进行巡检，系统可以实时监测非法入侵自动报警。对移动对象自动跟踪、抓拍、报警。
+				</p>
+				<p>
+					<img src="./images/new2-2/image003.png" style="max-width:100%" data-preview-src="" data-preview-group="1" />
 				</p>
 				<br>
-				<p><h5>解决运维问题</h5></p>
-			    <p>
-			     1.对无人值守升压站、风发电场设备自动巡检，代替人工，节约人力物力；
+				<p>
+					<h5>解决运维问题</h5>
+				</p>
+				<p>
+					1.对无人值守升压站、风发电场设备自动巡检，代替人工，节约人力物力；
 				</p>
 				<p>2.减少运维人员监盘压力，设备异常自动识别，自动上报；</p>
 				<p>3.针对设备实时巡检，最大限度减少漏检、错检，提高巡检作业的质量和效率。</p>
 				<p>4.提供巡检报表及整体巡检录像，减少事务性工作；</p>
 				<p>5.红外在线实时测温代替人工测温枪测温，解决人工测温实时性差问题。</p>
 				<p>6.相比机器人巡检不受路线和天气充电等问题影响，实用性强。</p>
-				
-				<h4 style="text-align:center;color:royalblue">					
+
+				<h4 style="text-align:center;color:royalblue">
 					★创新铸就四方，梦想点亮未来★<br><br>
-					★Innovation Lights Our Future★ 
+					★Innovation Lights Our Future★
 				</h4>
 				<br>
 				<p style="text-align:center;font-weight:bold">
-				四方股份为您提供优质的解决方案
-				</p>	
-				<p style="text-align:center;font-weight:bold">
-				如有任何问题，请与我们联系<br>	
-				邮箱：shijianhua@sf-auto.com<br>电话：18515512819/010-82182205
+					四方股份为您提供优质的解决方案
 				</p>
-				<p><h5>封页摘要:</h5></p>
-				<p>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;基于人工智能的风电场视频巡检系统通过人工智能识别、视频轮巡、多视频拼接等技术对风电场及升压站现场采集视频进行处理分析，分析结果上传到上一级调度供运维人员决策使用。可代替人工巡检传统作业模式，解决无人值守风电场设备及安防巡检问题。	
+				<p style="text-align:center;font-weight:bold">
+					如有任何问题，请与四方股份电站事业部联系<br>
+					技术沟通联络邮箱：shijianhua@sf-auto.com<br>技术沟通联系电话：18515512819/010-82182205
 				</p>
 			</div>
 		</div>
