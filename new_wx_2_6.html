@@ -2,7 +2,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>CSD-812D次同步振荡监测保护装置</title>
+		<title>新能源电站快速调频控制系统</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta http-equiv="Expires" content="0">
@@ -210,69 +210,103 @@
 		<div class="mui-content">
 			<div class="mui-content-padded">
 				<p>
-					<h5 style="font-size:15px;text-align:center">CSD-812D次同步振荡监测保护装置</h5>
+					<h5 style="font-size:15px;text-align:center">新能源电站快速调频控制系统</h5>
 				</p>
 				<br>
-				<p>
-					<h5>产品概述</h5>
-				</p>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					风电、光伏等新能源发电技术迅猛发展，使得电网面临频繁的次/超同步振荡干扰，安全稳定受到威胁。新能源集中接入地区电网的新型次同步振荡表现为频率宽频时变，多振荡分量并存且可远距离传播引发区域电网振荡。CSD-812D次同步振荡监测保护装置适用于对新能源厂站、新能源汇集站的进出线路的次同步/超同步振荡进行监测。
+					新能源快速发展和大规模接入电网，挤占具有转动惯量的常规电源发展空间，电网一次调频资源储备下降，抗扰动能力降低，需新能源机组参与大电网调频；为保障电网稳定、提升大电网频率安全水平、提高电网对新能源的消纳能力，四方股份作为西北电力调控分中心组织的宁夏电力调控中心试点中的唯一一家被邀请的二次设备厂家，研发快速调频控制装置，并形成新能源参与电网快速调频响应技术方案。
 				</p>
 
 				<p>
-					<h5>主要功能</h5>
+					<h5>系统简介</h5>
 				</p>
 				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					CSD-812D次同步振荡检测保护装置针对大规模新能源接入系统后引起的次同步/超同步振荡问题实施监测和保护，能够快速识别产生振荡的扰动源，实现新能源接入后发生振荡时有选择性地顺序切除扰动源，从而避免系统持续振荡、保障系统的安全稳定运行。
+					基于CSPA-2000/POCS功率优化控制系统，采用嵌入式硬件分层分布式架构的快速控制技术，自主高精度交流插件实时采集并网点的电压、电流，在并网点频率发生扰动时，根据频率死区、调差率、调度AGC设定值等参数按照优化策略给出每台逆变器/风机出力目标，实现并网点频率和发电设备功率的快速调节，提高新能源场站频率电压调节的响应速度与控制精度。
 				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					CSD-812D装置具备以下主要功能：
-				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					1）监测：实时监测测点线路的振荡频率及振荡特征参量。
-				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					2）保护：多层次的次/超同步保护功能，必要时切除振荡线路，保障区域安全。
-				</p>
-				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					3）诊断：提供振荡特性分析参数，为振荡源/振荡传播规律研究提供数据支撑。
+				<p>
+					<img src="./images/new2-6/image001.png" style="max-width:100%" data-preview-src="" data-preview-group="1" />
 				</p>
 
 				<p>
-					<h5>核心技术</h5>
+					<h5>技术特点</h5>
 				</p>
 				<p>
 					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						1）基于原始采样数据的广域宽频高精度提取，频率自适应+多振荡模式分离；<br>
+						1）高精度的频率测量，具备躲避单一短路故障引起的瞬时频率突变的能力
 					</p>
 					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						2）多特征参量（谐波频率/谐波阻抗/谐波功率/谐波电流/电压）全程在线监测；<br>
+						2）快速频率测控系统可直接控制光伏逆变器或风机，实现快速频率响应功能
 					</p>
 					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						3）全方位多层次保护功能设计，基于传播方向的谐波阻抗实时计算为四方独有；<br>
+						3）具备数据监测和录波功能，可实时记录电站并网点信息及一次调频期间被控设备运行状态
 					</p>
 					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						4）灵活的保护功能配置与出口策略，依据不同应用场景，支持分组轮切与精细化切除；<br>
+						4）实现快速频率事件记录、查询功能以及快速频率积分电量等相关考核指标的计算分析
 					</p>
 					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						5）具备多种通信接口，支持组网，构建区域次同步振荡监控系统实现高级分析应用。<br>
+						5）实现电站快速频率响应功能的参数设置、运行监视、数据采集等人机交互功能
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						6）实现光伏/风力电站有功功率、无功/电压的自动控制
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						7）接受并执行调度机构下发的实时调控/计划曲线指令
 					</p>
 				</p>
+
+
+
+				<p>
+					<h5>性能指标</h5>
+				</p>
+				<p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						1）测频精度指标：≤0.002Hz
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						2）频率采样周期：≤100ms
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						3）与外部通信最小周期：50ms
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						4）快速调频响应死区：±0.06Hz（光伏）、±0.10Hz（风电）
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						5）响应滞后时间thx：≤2s
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						6）响应时间t0.9：≤5s（光伏）、≤12s（风电）
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						7）调节时间ts：≤15s
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						8）调频控制偏差：±1%Pn（光伏）、±2%Pn（风电）
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						9）一次调频控制周期：≤1s
+					</p>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						10）具备躲故障引起瞬时频率突变能力
+					</p>
+
+
+				</p>
+
 				<p>
 					<p>
 						<h5>工程应用</h5>
 					</p>
-					<p>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						CSD-812D实现对风电场、风电汇集站线路次/超同步振荡功率/阻抗/电流的实时监视，当测点特征量越限且持续时间满足设定，切除振荡线路，防止振荡进一步扩张，同时，装置以IEEE Std
-						C37规约上传测点监测信息及录波数据，便于主站获取全网次/超同步振荡态势，分析振荡来源/路径，优化运行方式，确保电网安全。
+					<p style="width:100%;text-align: center;font-size:12px">宁夏五里坡第二风电场频率阶跃测试结果
 					</p>
 					<p>
-						<img src="./images/new2-5/image002.png" style="max-width:100%" data-preview-src="" data-preview-group="1" />
+						<img src="./images/new2-6/image002.png" style="max-width:100%" data-preview-src="" data-preview-group="1" />
 					</p>
-					<p style="width:100%;text-align: center;font-size:12px">新能源集中接入地区次同步振荡广域监测保护系统网络结构图
+					<p>
+						<img src="./images/new2-6/image003.png" style="max-width:100%" data-preview-src="" data-preview-group="1" />
 					</p>
+
 					<br>
 					<h4 style="text-align:center;color:royalblue">
 						★创新铸就四方，梦想点亮未来★<br><br>
@@ -283,8 +317,8 @@
 						四方股份为您提供优质的解决方案
 					</p>
 					<p style="text-align:center;font-weight:bold">
-						如有任何问题，请与我们联系<br>
-						技术沟通联络邮箱：changfujie@sf-auto.com<br>技术沟通联系电话：18611628359
+						如有任何问题，请与四方股份电站事业部联系<br>
+						技术沟通联络邮箱：qianhuadong@sf-auto.com<br>技术沟通联系电话：18515512616
 					</p>
 			</div>
 		</div>
